@@ -1,12 +1,19 @@
 body{ margin:0;  }
 .no-touch body{ background:#000; }
-h1, h2, h3, h4, h5, h6, p{ color:#000000; }
+h1, h2, h3, h4, h5, h6, p{ color:#FFFFFF; }
 
 #wrapper{ max-width:100%; margin-left:0;}
 #wrapper{ visibility:hidden; }
 a{ color:#444; text-decoration:none; }
 a:hover{ color:#000; }
 a:visited{ color:#444; }
+a.anchor {
+  color: white;
+  text-decoration: none !important;
+}
+a.anchor:hover {
+  color: white;
+}
 
 .easeinout{
   -webkit-transition: all 0.75s ease-in-out;
@@ -29,10 +36,28 @@ section{ position:relative;overflow:hidden; }
 .bg_wrap{ width:100%; top:0; left:0; z-index:-1; overflow:hidden; }
 .bg{ position:relative; top:0;  z-index:-1;  display:block; }
 
-.content{ width:400px; background:white; font-size:25px; line-height:40px; padding:20px; }
+.content { /*width:400px;*/
+  font-size: 1.3em;
+  line-height:100%;
+  padding:20px;
+  font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content p {
+  padding:20px;
+  line-height: 30px;
+}
+.content h2 a {
+  font-size: 1.3em;
+  font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: left;
+}
 .front-section { padding:20px; padding-top:25%; }
 
-#introtext {
+#introtext, .content {
     text-align: center;
     color: white;
     display: block;

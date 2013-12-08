@@ -29,9 +29,9 @@
 
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#services">Services</a></li>
+                <ul class="nav navbar-nav navigation-links">
+                  <li><a href="#timeAndDate">Time and Date</a></li>
+                  <li><a href="#location">Location</a></li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
@@ -49,46 +49,51 @@
         <div class="clearfix"></div>
         </div>
         <div id="wrapper">
+          <section>
+            <div class="content">
+              <h2><a class="anchor" name="timeAndDate">Time and Date</a></h2>
+              <p>
+                The ceremony will start promptly at 12:15 PM.  Please Don't be late.
+              </p>
+            </div>
+            </section>
             <section>
             <div class="content">
-            <h1>Hello</h1>
-            <p>
-            Lorem ipsum dolor, sed amet num agricula. Lorem ipsum dolor, sed amet unum agricula. Lorem ipsum dolor, sed amet unum agricula. Lorem ipsum dolor, sed amet unum agricula.
-            </p>
-          </div>
-            </section>
+              <h2><a class="anchor" name="location">Location</a></h2>
+              <h3>About Cafe Ba Ba Reeba</h3>
+              <p>
+              Cafe Ba-Ba-Reeba! is a premier Spanish tapas restaurant located in Chicago. Cafe Ba-Ba-Reeba! is known for  Tapas, the hot & cold appetizers of Spain; Paella, a typical Valencian rice dish served with vegetables and meat or seafood; and Sangria, Spain's famous wine "fiesta" drink made from fruit, wine and liquors.
+              </p>
 
-            <section>
-            <p class="content">
-            Lorem ipsum dolor, sed amet num agricula. Lorem ipsum dolor, sed amet unum agricula. Lorem ipsum dolor, sed amet unum agricula. Lorem ipsum dolor, sed amet unum agricula.
-            </p>
-            </section>
-            <section>
-            <p class="content">
-            Lorem ipsum dolor, sed amet num agricula. Lorem ipsum dolor, sed amet unum agricula. Lorem ipsum dolor, sed amet unum agricula. Lorem ipsum dolor, sed amet unum agricula.
-            </p>
-            </section>
-            <section>
-            <p class="content">
-            Lorem ipsum dolor, sed amet num agricula. Lorem ipsum dolor, sed amet unum agricula. Lorem ipsum dolor, sed amet unum agricula. Lorem ipsum dolor, sed amet unum agricula.
-            </p>
-            </section>
+              <h3>Parking</h3>
+              <p> You will be able to find street parking, or valet parking will be available for $13</p>
+
+              <h3>Directions</h3>
+              <p> Cafe Ba Ba Reeba is located at Halsted and Armitage. <p>
+              <p>
+              <iframe class='gmap' src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880fd319dc261c5f%3A0x4f45ff51954d8fd5!2scafe+baba+reeba!5e0!3m2!1sen!2sus!4v1386544163372" width="400" height="300" frameborder="0" style="border:0"></iframe>
+              </p>
+
+            </div>
+          </section>
+
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/lazyload.js"></script>
         <script src="js/jquery-bgScroll-min.js"></script>
 
         <script>
             $(document).ready(function(){
                 $('#wrapper').bgScroll({
-                  first_image: 'images/1.jpg',
+                  first_image: 'images/bg/1.jpg',
                   first_section: 0,
                   images_src: [
                     'images/bg/1.jpg',
                     'images/bg/2.jpg',
-                    'images/bg/3.jpg',
-                    'images/bg/4.jpg',
+                    //'images/bg/3.jpg',
+                    //'images/bg/4.jpg',
                   ],
                   img_height: 723,
                   img_width: 1300,
@@ -110,6 +115,22 @@
                     tag_name: 'section',
                     wrap_div: '#wrapper'*/
                 });
+
+              $('.navigation-links li a').click( function(event) {
+                console.log($(this).attr('href'));
+                var tName = $(this).attr('href').substring(1);
+                var target = $("a[name='" + tName + "']");
+                $.scrollTo(
+
+                target,
+                    {
+                      duration: 1000,
+                      offset: { 'left':0, 'top':-0.2*$(window).height() }
+                    }
+                );
+                event.preventDefault();
+              });
+
             });
         </script>
 
