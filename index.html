@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>Amy and Maksim's Wedding</title>
+        <title>Amy+M's Wedding</title>
         <meta name="description" content="Welcome to the wedding website for Amy and Maksim's Big Day!">
 
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -28,7 +28,7 @@
         <script src="js/modernizr2.js"></script>
     </head>
     <body>
-        <img src="images/loading.gif" id="loader" alt="Loading" />
+        <!--<img src="images/loading.gif" id="loader" alt="Loading" />-->
           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
               <div class="navbar-header">
@@ -38,12 +38,13 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Amy and Maksim's Wedding</a>
+                <a class="navbar-brand" href="index.php">A+M's Wedding</a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navigation-links">
+                  <li><a href="#howWhy">How & Why</a></li>
                   <li><a href="#timeAndDate">Time and Date</a></li>
                   <li><a href="#location">Location</a></li>
                 </ul>
@@ -61,52 +62,82 @@
 
         <div class="clearfix"></div>
         </div>
-        <div id="wrapper">
-          <section>
-            <div class="content">
-              <h1 class="timeAndDate">Time and Date</h1>
-              <p>
-                The ceremony will start promptly at 12:15 PM.  Please Don't be late.
-              </p>
-            </div>
-            </section>
-            <section>
-            <div class="content">
-              <h1 class="location">Location</h1>
-              <h2>About Cafe Ba Ba Reeba</h2>
-              <p>
-              Cafe Ba-Ba-Reeba! is a premier Spanish tapas restaurant located in Chicago. Cafe Ba-Ba-Reeba! is known for  Tapas, the hot & cold appetizers of Spain; Paella, a typical Valencian rice dish served with vegetables and meat or seafood; and Sangria, Spain's famous wine "fiesta" drink made from fruit, wine and liquors.
-              </p>
+        <section>
+          <div class="content">
+            <h1 class="howWhy">How & Why</h1>
+            <p>
+              The specific where's, how's and why's aren't that important (and probably not too interesting to people who are not either of them). They were best friends for years in Chicago before either of them realized they had been crazy about each other for most of that time.
+            </p>
+            <p>
+              He visited her in the hospital every day and her family could not convince her that his feelings for her were anything other than platonic.
+            </p>
+             
+            <p>
+              They made a list of places to travel to together as buddies before they realized they wanted to go there as husband and wife.
+            </p>
+             
+            <p>
+              She cried when she told him she had feelings for him, certain she was losing her best friend. He convinced her otherwise.
+            </p>
+             
+            <p>
+              He told her she'd never learn how to spell "Pecherskiy" when she first met him. Now she's taking it as her last name.
+            </p>
+            <p>
+              He's the kindest, most selfless person she knows. And the dorkiest.
+             
+            <p>
+              He feels the same way about her.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="content">
+            <h1 class="timeAndDate">Time and Date</h1>
+            <p>
+              The ceremony will start promptly at 12:00 PM.  Please Don't be late.
+            </p>
+          </div>
+        </section>
+        <section>
+        <div class="content">
+          <h1 class="location">Location</h1>
+          <h2>About Cafe Ba Ba Reeba</h2>
+          <p>
+          Cafe Ba-Ba-Reeba! is a premier Spanish tapas restaurant located in Chicago. Cafe Ba-Ba-Reeba! is known for  Tapas, the hot & cold appetizers of Spain; Paella, a typical Valencian rice dish served with vegetables and meat or seafood; and Sangria, Spain's famous wine "fiesta" drink made from fruit, wine and liquors.
+          </p>
 
-              <h2>Parking</h2>
-              <p> You will be able to find street parking, or valet parking will be available for $13</p>
+          <h2>Parking</h2>
+          <p> You will be able to find street parking, or valet parking will be available for $13</p>
 
-              <h2>Directions</h2>
-              <p> Cafe Ba Ba Reeba is located at Halsted and Armitage. <p>
-              <div id="gmap">
-              <h2>Map</h2>
-              <p><a href="https://goo.gl/maps/4KQds" target="_blank"><img src="http://maps.googleapis.com/maps/api/staticmap?center=2024+N+Halsted+St,+Chicago,+IL+60614&zoom=15&scale=1&size=600x300&maptype=roadmap&sensor=false&key=AIzaSyCaRmFzJ7iP6VtO8SkazLNz24s8NiKI8CY&format=png&visual_refresh=true&markers=size:mid%7Ccolor:red%7C2024+N+Halsted+St,+Chicago,+IL+60614" width="95%"/></a></p>
-              <a style="text-align: center; color:white; margin-top:10px;" href="https://goo.gl/maps/4KQds" target="_blank">View Full Map</a>
-              </div>
-
-            </div>
-          </section>
+          <h2>Directions</h2>
+          <p> Cafe Ba Ba Reeba is located at Halsted and Armitage. <p>
+          <div id="gmap">
+          <h2>Map</h2>
+          <p><a href="https://goo.gl/maps/4KQds" target="_blank"><img src="images/map.png" width="95%"/></a></p>
+          <a style="text-align: center; color:white; margin-top:10px;" href="https://goo.gl/maps/4KQds" target="_blank">View Full Map</a>
+          </div>
 
         </div>
+      </section>
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
-        <script src="js/lazyload.js"></script>
-        <script src="js/jquery-bgScroll-min.js"></script>
         <script src="js/main.js"></script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-                s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46270241-1', 'amyandmaks.im');
+  ga('send', 'pageview');
+
+</script>
     </body>
 </html>

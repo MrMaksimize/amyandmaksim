@@ -1,36 +1,13 @@
 $(document).ready(function(){
   console.log('ready');
   // Generate Map URL
+  var images = new Array();
+  var imageCount = 9;
+  for (var i = 1; i <= imageCount; i++) {
+    images.push('images/bg/' + i + '.jpg');
+  }
 
-  $('#wrapper').bgScroll({
-    first_image: 'images/bg/8.jpg',
-    first_section: 0,
-    images_src: [
-      'images/bg/8.jpg',
-      'images/bg/7.jpg',
-      //'images/bg/3.jpg',
-      //'images/bg/4.jpg',
-    ],
-    img_height: 723,
-    img_width: 1300,
-
-
-      /*analytics: false,
-      first_image: 'http://lorempixel.com/1500/723/nature/'
-      first_section: 0,
-      images: true,
-      images_src: [
-          'http://lorempixel.com/1500/723/nature/',
-          'http://lorempixel.com/1500/723/abstract/',
-          'http://lorempixel.com/1500/723/sports/',
-          'http://lorempixel.com/1500/723/nightlife/'
-      ],
-      img_height: 723,
-      img_width: 1500,
-      spacer_height: 'auto',
-      tag_name: 'section',
-      wrap_div: '#wrapper'*/
-  });
+   $.backstretch(images, {duration: 5000, fade: 750});
 
 
 
