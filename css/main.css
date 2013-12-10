@@ -108,6 +108,10 @@ section{ position:relative;overflow:hidden; background: transparent; }
   padding-right: 5%;
 }
 
+.thanks-page .last-row {
+  margin-top: 50px;
+}
+
 .content h3 {
   margin-bottom:2px;
 }
