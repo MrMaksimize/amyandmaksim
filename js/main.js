@@ -15,7 +15,7 @@ $(document).ready(function(){
   var images = new Array();
   var imageCount = 9;
   for (var i = 1; i <= imageCount; i++) {
-    images.push('images/bg/' + i + '.jpg');
+    //images.push('images/bg/' + i + '.jpg');
   }
   var images = shuffleArray(images);
 
