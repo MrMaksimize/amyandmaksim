@@ -1,4 +1,4 @@
-#watch( '.*\.*' ) do
-watch('.git/refs/heads') do
+watch( '.*\.*' ) do
+#watch('.git/refs/heads') do
   system 's3-upload'
 end
