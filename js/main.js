@@ -13,9 +13,9 @@ $(document).ready(function(){
   console.log('ready');
   // Generate Map URL
   var images = new Array();
-  var imageCount = 9;
+  var imageCount = 10;
   for (var i = 1; i <= imageCount; i++) {
-    //images.push('images/bg/' + i + '.jpg');
+    images.push('images/bg/' + i + '.jpg');
   }
   var images = shuffleArray(images);
 
