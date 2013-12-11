@@ -31,7 +31,7 @@ section{ position:relative;overflow:hidden; background: transparent; padding: 0p
 
 .content { /*width:400px;*/
   font-size: 1.3em;
-  line-height:100%;
+  line-height:normal;
   padding:20px;
   font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: white;
@@ -112,8 +112,31 @@ section{ position:relative;overflow:hidden; background: transparent; padding: 0p
 .thanks-page .row {
   padding-left: 5%;
   padding-right: 5%;
+  clear: both;
 }
 
+.thanks-page .row-1 {
+}
+
+.thanks-page .row-2 {
+
+}
+
+.thanks-page .row-3 {
+
+}
+
+.thanks-page .row-4 {
+
+}
+
+.thanks-page .row-5 {
+
+}
+
+.thanks-page .row-6 {
+
+}
 .thanks-page .last-row {
   margin-top: 50px;
 }
@@ -146,6 +169,7 @@ h1.acknowledgements {
   padding-right: 5%;
   line-height: normal !important;
 }
+
 
 
 /* Small devices (tablets, 768px and down) */

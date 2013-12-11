@@ -11,6 +11,26 @@ function shuffleArray(array) {
 
 $(document).ready(function(){
   console.log('ready');
+
+  $('.thanks-page .col1 .row').each(function(index){
+    console.log(index);
+    var classList = $(this).attr('class').split(/\s+/);
+    var rowClass = classList[1];
+    var oddHeight = $(this).innerHeight();
+    var evenHeight = $('.thanks-page .col2 .' + rowClass).innerHeight();
+    console.log(oddHeight);
+    console.log(evenHeight);
+
+    if (oddHeight < evenHeight) {
+      $('.' + rowClass).height(evenHeight);
+    }
+    else {
+      $('.' + rowClass).height(oddHeight);
+    }
+
+  });
+
+
   // Generate Map URL
   var images = new Array();
   var imageCount = 10;
