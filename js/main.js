@@ -33,7 +33,7 @@ $(document).ready(function(){
 
   // Generate Map URL
   var images = new Array();
-  var imageCount = 10;
+  var imageCount = 12;
   for (var i = 1; i <= imageCount; i++) {
     images.push('images/bg/' + i + '.jpg');
   }
