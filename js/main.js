@@ -34,10 +34,10 @@ $(document).ready(function(){
     var evenHeight = $('.thanks-page .col2 .' + rowClass).innerHeight();
 
     if (oddHeight < evenHeight) {
-      $('.' + rowClass).height(evenHeight);
+      $('.' + rowClass).height(evenHeight + 50);
     }
     else {
-      $('.' + rowClass).height(oddHeight);
+      $('.' + rowClass).height(oddHeight + 50);
     }
 
   });
