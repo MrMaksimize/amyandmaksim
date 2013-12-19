@@ -184,7 +184,7 @@ h1.acknowledgements {
 
 /* Small devices (tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-  .row.questions, li.questions, a.questions {
+  .row.questions, li.questions, a.questions, .row.pictures, li.pictures, a.pictures {
     display: none !important;
   }
 }
